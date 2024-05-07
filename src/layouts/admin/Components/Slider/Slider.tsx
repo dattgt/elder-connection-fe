@@ -1,7 +1,5 @@
-import { PieChartOutlined, MenuOutlined, DesktopOutlined } from '@ant-design/icons';
+import { MenuOutlined } from '@ant-design/icons';
 import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
-import StreetviewOutlinedIcon from '@mui/icons-material/StreetviewOutlined';
-import PersonAddAlt1OutlinedIcon from '@mui/icons-material/PersonAddAlt1Outlined';
 import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
 import AppsOutlinedIcon from '@mui/icons-material/AppsOutlined';
 import { Menu, MenuProps } from 'antd';
@@ -26,9 +24,8 @@ function getItem(
 }
 
 export default function MySider() {
-    // const select = useLocation();
     const navigate = useNavigate();
-    // const selected = select.pathname.split('/')[1];
+
     const [collapsed, setCollapsed] = useState(window.innerWidth < 1280);
 
     useEffect(() => {
@@ -43,38 +40,22 @@ export default function MySider() {
         };
     }, []);
 
-    // const handleCollasped = (pre: boolean) => {
-    //   setCollapsed(!pre);
-    // };
-
     const getConditionalItems = (): MenuItem[] => {
         return [
-            getItem('Dashboard', '1', <AnalyticsOutlinedIcon />),
-            getItem('Quản lý khóa học', 'sub1', <AppsOutlinedIcon />, [
-                getItem('Tất cả khóa học', '3', <PieChartOutlined />),
-                getItem('Thêm khóa học mới', '4', <DesktopOutlined />),
-            ]),
-            getItem('Quản lý tài khoản', 'sub2', <ManageAccountsOutlinedIcon />, [
-                getItem('Xem tất cả tài khoản', 'accountAll', <StreetviewOutlinedIcon />),
-                getItem('Tạo tài khoản', 'createAccount', <PersonAddAlt1OutlinedIcon />),
-            ]),
+            getItem('Bảng thống kê', '1', <AnalyticsOutlinedIcon />),
+            getItem('Quản lý dịch vụ', '2', <AppsOutlinedIcon />),
+            getItem('Quản lý tài khoản', '3', <ManageAccountsOutlinedIcon />),
+            getItem('Chương trình dào tạo', '4', <ManageAccountsOutlinedIcon />),
+            getItem('Quản lý kết nối', '5', <ManageAccountsOutlinedIcon />),
         ];
     };
     const navUrl = new Map<string, string>();
     navUrl
         .set('1', '/admin/')
-        .set('3', '/admin/getAllCourse')
-        .set('4', '/admin/addCourse/')
-        .set('accountAll', '/admin/getAllAccount')
-        .set('createAccount', '/admin/createAccount');
-
-    // useEffect(() => {
-    //   const fetchData = async () => {
-    //     const response = await agent.Role.checkRole();
-    //     dispatch(roleCheckSuccess(response));
-    //   };
-    //   fetchData();
-    // }, []);
+        .set('2', '/admin/quan-ly-dich-vu')
+        .set('3', '/admin/quan-ly-tai-khoan')
+        .set('4', '/admin/truong-trinh-dao-tao')
+        .set('5', '/admin/quan-ly-ket-noi');
 
     return (
         <>
@@ -83,7 +64,7 @@ export default function MySider() {
                 collapsible
                 collapsed={collapsed}
                 onCollapse={(value) => setCollapsed(value)}
-                className="overflow-hidden border-r-[1px]"
+                className="overflow-hidden border-r-[1px] "
                 trigger={
                     <div className="w-full border-r-[1px] border-t-[1px]">
                         <MenuOutlined></MenuOutlined>
