@@ -12,7 +12,7 @@ const { Title, Text } = Typography;
 
 const InformationPage: React.FC = () => {
     return (
-        <>
+        <div className="min-h-screen bg-gray-100 p-4">
             <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex items-center space-x-4">
                     <Avatar size={128} icon={<UserOutlined />} />
@@ -81,7 +81,7 @@ const InformationPage: React.FC = () => {
                     </div>
                 </Card>
             </div>
-        </>
+        </div>
     );
 };
 

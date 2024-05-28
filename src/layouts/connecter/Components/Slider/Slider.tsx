@@ -66,10 +66,10 @@ export default function MySider() {
         .set('3', '/connecter/quan-ly-khach-hang')
         .set('4', '/connecter/cong-viec')
         .set('5', '/connecter/thu-nhap')
-        .set('6', '#')
+        .set('6', '/connecter/quy-trinh-dao-tao')
         .set('7', '/connecter/thong-tin-ca-nhan')
-        .set('8', '#')
-        .set('9', '#');
+        .set('8', '/connecter/')
+        .set('9', '/connecter/');
 
     return (
         <Sider

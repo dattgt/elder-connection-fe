@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Progress, Select, List, Avatar, Table, Badge, Typography } from 'antd';
+import { Card, Row, Col, Progress, Select, List, Avatar, Table, Badge } from 'antd';
 import {
     LineChart,
     Line,
@@ -13,7 +13,6 @@ import {
 } from 'recharts';
 
 const { Option } = Select;
-const { Title } = Typography;
 
 const incomeData = [
     { name: 'Jan', income: 40 },
@@ -146,8 +145,8 @@ const columns = [
 
 const MyIncomePage: React.FC = () => {
     return (
-        <>
-            <Title level={2} className="mb-6">Bảng thống kê</Title>
+        <div className="bg-gray-100 p-6">
+            <h2 className="mb-4 text-2xl font-bold">Bảng thống kê</h2>
 
             <Row gutter={[16, 16]} className="mb-6">
                 <Col span={12}></Col>
@@ -261,7 +260,7 @@ const MyIncomePage: React.FC = () => {
                     </Card>
                 </Col>
             </Row>
-        </>
+        </div>
     );
 };
 

@@ -147,7 +147,7 @@ const columnsCustomer = [
 const MyJobPage = () => {
     return (
         <>
-            <Title level={2} className="mb-6">Công việc của tôi</Title>
+            <Title level={3} className="mb-6">Công việc của tôi</Title>
 
             <Row gutter={[16, 16]} className="mb-6">
                 <Col span={12}>

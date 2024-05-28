@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { adminRoutes, privateRoutes, publicRoutes, connecterRoutes } from './routes';
+import { adminRoutes, privateRoutes, publicRoutes } from './routes';
 
 function App() {
     return (
@@ -36,17 +36,6 @@ function App() {
                             key={index}
                             path={path}
                             element={<Layout childen={<Component />} />}
-                        />
-                    );
-                })}
-                {connecterRoutes.map(({ layout, component, path }, index) => {
-                    const Layout = layout;
-                    const Component = component;
-                    return (
-                        <Route
-                            key={index}
-                            path={path}
-                            element={<Layout children={<Component />} />}
                         />
                     );
                 })}

@@ -5,7 +5,6 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const { Option } = Select;
 const { Text } = Typography;
-const { Title } = Typography;
 
 const incomeData = [
     { name: 'Jan', income2023: 30, income2024: 50 },
@@ -79,7 +78,7 @@ const recentFeedbacksData = [
 const DashBoardPage = () => {
     return (
         <>
-            <Title level={2} className="mb-6">Bảng thống kê</Title>
+            <h2 className="mb-4 text-2xl font-bold">Bảng thống kê</h2>
             <div className="flex items-center">
                 <Select defaultValue="jan" style={{ width: 150, marginRight: 16 }}>
                     <Option value="jan">Tháng 1/2024</Option>
