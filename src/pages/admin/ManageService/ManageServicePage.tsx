@@ -1,4 +1,3 @@
-import React from 'react';
 import { Row, Col, Card, Table, Button, Typography, Select, Tag } from 'antd';
 import {
     PieChart,
@@ -58,16 +57,6 @@ const frequencyData = [
     { month: 'Dec', services: 29 },
 ];
 
-interface ServiceDataType {
-    key: string;
-    name: string;
-    description: string;
-    price: string;
-    utilization: string;
-    status: string;
-    actions: string;
-}
-
 const serviceData: ServiceDataType[] = [
     {
         key: '1',
@@ -124,7 +113,7 @@ const columns = [
         title: 'Hành động',
         dataIndex: 'actions',
         key: 'actions',
-        render: (text: any, record: ServiceDataType) => (
+        render: (_: any, record: ServiceDataType) => (
             <span>
                 <Button
                     type="default"
@@ -177,7 +166,7 @@ const ManageServicePage = () => {
                                     fill="#8884d8"
                                     label
                                 >
-                                    {distributionData.map((entry, index) => (
+                                    {distributionData.map((_, index) => (
                                         <Cell
                                             key={`cell-${index}`}
                                             fill={
@@ -220,7 +209,7 @@ const ManageServicePage = () => {
                                     fill="#82ca9d"
                                     label
                                 >
-                                    {usageData.map((entry, index) => (
+                                    {usageData.map((_, index) => (
                                         <Cell
                                             key={`cell-${index}`}
                                             fill={['#0088FE', '#00C49F', '#FFBB28'][index % 3]}
