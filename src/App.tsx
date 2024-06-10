@@ -13,7 +13,7 @@ function App() {
                         <Route
                             key={index}
                             path={path}
-                            element={<Layout childen={<Component />} />}
+                            element={<Layout children={<Component />} />}
                         />
                     );
                 })}
@@ -24,7 +24,7 @@ function App() {
                         <Route
                             key={index}
                             path={path}
-                            element={<Layout childen={<Component />} />}
+                            element={<Layout children={<Component />} />}
                         />
                     );
                 })}
@@ -35,7 +35,7 @@ function App() {
                         <Route
                             key={index}
                             path={path}
-                            element={<Layout childen={<Component />} />}
+                            element={<Layout children={<Component />} />}
                         />
                     );
                 })}
