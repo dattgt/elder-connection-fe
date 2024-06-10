@@ -1,4 +1,3 @@
-import React from 'react';
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
 
 const Footer = () => {

@@ -221,7 +221,7 @@ const DashBoardPage = () => {
                                     dataKey="value"
                                     label
                                 >
-                                    {customerAgeData.map((entry, index) => (
+                                    {customerAgeData.map((_, index) => (
                                         <Cell
                                             key={`cell-${index}`}
                                             fill={COLORS[index % COLORS.length]}
@@ -246,7 +246,7 @@ const DashBoardPage = () => {
                                     dataKey="value"
                                     label
                                 >
-                                    {connectorAgeData.map((entry, index) => (
+                                    {connectorAgeData.map((_, index) => (
                                         <Cell
                                             key={`cell-${index}`}
                                             fill={COLORS[index % COLORS.length]}
@@ -273,7 +273,7 @@ const DashBoardPage = () => {
                                     dataKey="value"
                                     label
                                 >
-                                    {serviceDistributionData.map((entry, index) => (
+                                    {serviceDistributionData.map((_, index) => (
                                         <Cell
                                             key={`cell-${index}`}
                                             fill={COLORS[index % COLORS.length]}
