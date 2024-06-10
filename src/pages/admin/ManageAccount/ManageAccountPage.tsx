@@ -1,4 +1,3 @@
-import React from 'react';
 import { Row, Col, Card, Table, Button, Typography, Select } from 'antd';
 import { UserOutlined, TeamOutlined, SolutionOutlined } from '@ant-design/icons';
 

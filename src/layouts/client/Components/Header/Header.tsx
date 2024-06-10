@@ -1,6 +1,7 @@
 import React from 'react';
-import { Menu, Dropdown, Button } from 'antd';
+import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const aboutMenu = (
   <Menu>
@@ -20,12 +21,12 @@ const servicesMenu = (
 
 const Header: React.FC = () => {
   return (
-    <div className="flex items-center justify-between p-4 bg-white shadow-md">
-      <div className="flex items-center">
-        <img src="https://via.placeholder.com/50" alt="Logo" className="mr-4" />
-        <span className="text-xl font-bold">Elder Connection</span>
-      </div>
-      <div className="flex items-center space-x-6">
+    <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg">
+      <div className="flex items-center space-x-44">
+      <Link to="/" className="flex items-center">
+          <img src="/logo.jpg" alt="Logo" className="w-16 h-16" />
+          <span className="text-2xl font-bold ml-2">Elder Connection</span>
+        </Link>
         <Dropdown overlay={aboutMenu}>
           <a className="ant-dropdown-link flex items-center" onClick={(e) => e.preventDefault()}>
             Về Elder Connection <DownOutlined className="ml-1" />
@@ -38,7 +39,11 @@ const Header: React.FC = () => {
         </Dropdown>
         <a href="#" className="hover:text-blue-500">Trở thành đối tác</a>
         <a href="#" className="hover:text-blue-500">CSKH</a>
-        <Button type="primary" className="ml-4">Đăng nhập</Button>
+        <button 
+          className="bg-[#839567] border border-[#5a6e40] text-white rounded-full shadow-md py-2 px-4 transition-all duration-300 ease-in-out hover:bg-[#6d7d4e] hover:border-[#4c5e35] flex items-center justify-center"
+        >
+          Đăng nhập
+        </button>
       </div>
     </div>
   );

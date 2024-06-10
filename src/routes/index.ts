@@ -11,7 +11,7 @@ import { DefaultLayoutProps } from '../types/layout.type';
 interface RouteProps {
     path: string;
     component: () => JSX.Element;
-    layout: ({ childen }: DefaultLayoutProps) => JSX.Element;
+    layout: ({ children }: DefaultLayoutProps) => JSX.Element;
 }
 
 const publicRoutes: RouteProps[] = [

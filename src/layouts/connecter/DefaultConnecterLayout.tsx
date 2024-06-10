@@ -5,14 +5,15 @@ import MyContent from './Components/Content/Content';
 import MyFooter from './Components/Footer/Footer';
 import { DefaultLayoutProps } from '../../types/layout.type';
 
-const DefaultAdminLayout = ({ children }: DefaultLayoutProps) => {
+
+const DefaultConnecterLayout = ({ children }: DefaultLayoutProps) => {
     return (
         <>
             <Layout className="min-h-screen flex">
                 <MySider />
                 <Layout className="bg-white flex flex-col w-full">
                     <MyHeader />
-                    <MyContent childen={children} />
+                    <MyContent children={children} />
                     <MyFooter />
                 </Layout>
             </Layout>
@@ -20,4 +21,4 @@ const DefaultAdminLayout = ({ children }: DefaultLayoutProps) => {
     );
 };
 
-export default DefaultAdminLayout;
+export default DefaultConnecterLayout;
