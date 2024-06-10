@@ -1,4 +1,3 @@
-import React from 'react';
 import { Row, Col, Card, Table, Button, Typography, Select, Tag } from 'antd';
 import {
     PieChart,
