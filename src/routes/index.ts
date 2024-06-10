@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import DefaultAdminLayout from '../layouts/admin/DefaultAdminLayout';
 import DefaultClientLayout from '../layouts/client/DefaultClientLayout';
 import DashBoardPage from '../pages/admin/DashBoard/DashBoardPage';
@@ -8,10 +9,24 @@ import TrainingProgramPage from '../pages/admin/TraningProgram/TrainingProgramPa
 import HomePage from '../pages/client/Home/HomePage';
 import { DefaultLayoutProps } from '../types/layout.type';
 
+// connecter
+import DefaultConnecterLayout from '../layouts/connecter/DefaultConnecterLayout';
+import DashBoardConnecterPage from '../pages/connecter/DashBoard/DashBoardPage';
+import InformationPage from '../pages/connecter/Information/InformationPage';
+import NewsPage from '../pages/connecter/News/NewsPage';
+import ManageCustomerPage from '../pages/connecter/ManageCustomer/ManageCustomerPage';
+import MyJobPage from '../pages/connecter/MyJob/MyJobPage';
+import MyIncomePage from '../pages/connecter/MyIncome/MyIncomePage';
+
+// interface RouteProps {
+//     path: string;
+//     component: () => JSX.Element;
+//     layout: ({ childen }: DefaultLayoutProps) => JSX.Element;
+// }
 interface RouteProps {
     path: string;
-    component: () => JSX.Element;
-    layout: ({ childen }: DefaultLayoutProps) => JSX.Element;
+    component: FC<{}>; // Change this line
+    layout: ({ children }: DefaultLayoutProps) => JSX.Element;
 }
 
 const publicRoutes: RouteProps[] = [
@@ -36,4 +51,38 @@ const adminRoutes: RouteProps[] = [
     },
 ];
 
-export { publicRoutes, privateRoutes, adminRoutes };
+const connecterRoutes: RouteProps[] = [
+    { 
+        path: '/connecter/', 
+        component: DashBoardConnecterPage, 
+        layout: DefaultConnecterLayout 
+    },
+    { 
+        path: '/connecter/thong-tin-ca-nhan', 
+        component: InformationPage, 
+        layout: DefaultConnecterLayout 
+    },
+    { 
+        path: '/connecter/tin-tuc', 
+        component: NewsPage, 
+        layout: DefaultConnecterLayout 
+    },
+    { 
+        path: '/connecter/quan-ly-khach-hang', 
+        component: ManageCustomerPage, 
+        layout: DefaultConnecterLayout 
+    },
+    { 
+        path: '/connecter/cong-viec', 
+        component: MyJobPage, 
+        layout: DefaultConnecterLayout 
+    },
+    { 
+        path: '/connecter/thu-nhap', 
+        component: MyIncomePage, 
+        layout: DefaultConnecterLayout 
+    },
+];
+
+
+export { publicRoutes, privateRoutes, adminRoutes, connecterRoutes };

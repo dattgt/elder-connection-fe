@@ -2,11 +2,11 @@ import { DefaultLayoutProps } from '../../types/layout.type';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 
-const DefaultClientLayout = ({ childen }: DefaultLayoutProps) => {
+const DefaultClientLayout = ({ children }: DefaultLayoutProps) => {
     return (
         <div>
             <Header />
-            <div className="">{childen}</div>
+            <div className="">{children}</div>
             <Footer />
         </div>
     );

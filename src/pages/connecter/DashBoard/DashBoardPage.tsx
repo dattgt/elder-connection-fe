@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, Row, Col, Progress, Select, Typography, Button, List, Checkbox, Tag, Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
