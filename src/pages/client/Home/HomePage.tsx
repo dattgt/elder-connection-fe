@@ -1,4 +1,3 @@
-import React from 'react';
 // import { ItemTest, useAddItemMutation, useGetListQuery } from '../../../services/example.service';
 import { Button, Card, Typography, Row, Col } from 'antd';
 import { CheckCircleOutlined, HeartOutlined, ClockCircleOutlined, DollarOutlined, } from '@ant-design/icons';

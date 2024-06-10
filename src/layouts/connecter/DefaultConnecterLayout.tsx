@@ -4,7 +4,7 @@ import MyHeader from './Components/Header/Header';
 import MyContent from './Components/Content/Content';
 import MyFooter from './Components/Footer/Footer';
 import { DefaultLayoutProps } from '../../types/layout.type';
-import React from 'react';
+
 
 const DefaultConnecterLayout = ({ children }: DefaultLayoutProps) => {
     return (
