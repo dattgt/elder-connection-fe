@@ -50,10 +50,10 @@ export default function MySider() {
     const getConditionalItems = (): MenuItem[] => [
         getItem('Bảng thống kê', '1', <HomeOutlined />),
         getItem('Tin tức và kiến thức', '2', <ReadOutlined />),
-        getItem('Quản lý khách hàng', '3', <HeartOutlined />),
+        // getItem('Quản lý khách hàng', '3', <HeartOutlined />),
         getItem('Công việc của tôi', '4', <ScheduleOutlined />),
         getItem('Thu nhập của tôi', '5', <DollarOutlined />),
-        getItem('Quy trình đào tạo', '6', <SolutionOutlined />),
+        // getItem('Quy trình đào tạo', '6', <SolutionOutlined />),
         getItem('Thông tin cá nhân', '7', <UserOutlined />),
         getItem('Hỗ trợ', '8', <HomeOutlined />), // Placeholder for actual icon
         getItem('Tài liệu', '9', <ReadOutlined />), // Placeholder for actual icon
@@ -63,10 +63,10 @@ export default function MySider() {
     navUrl
         .set('1', '/connecter/')
         .set('2', '/connecter/tin-tuc')
-        .set('3', '/connecter/quan-ly-khach-hang')
+        // .set('3', '/connecter/quan-ly-khach-hang')
         .set('4', '/connecter/cong-viec')
         .set('5', '/connecter/thu-nhap')
-        .set('6', '/connecter/quy-trinh-dao-tao')
+        // .set('6', '/connecter/quy-trinh-dao-tao')
         .set('7', '/connecter/thong-tin-ca-nhan')
         .set('8', '/connecter/')
         .set('9', '/connecter/');
