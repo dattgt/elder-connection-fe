@@ -9,13 +9,13 @@ const Footer = () => {
                         <h5 className="text-3xl font-bold">Elder Connection</h5>
                     </div>
                     <div className="flex space-x-4">
-                        <a href="https://facebook.com" className="hover:underline">
+                        <a href="https://www.facebook.com/profile.php?id=61558812134329" target='_blank' className="hover:underline">
                             <FacebookOutlined className="text-xl" />
                         </a>
-                        <a href="https://instagram.com" className="hover:underline">
+                        <a href="#" className="hover:underline">
                             <InstagramOutlined className="text-xl" />
                         </a>
-                        <a href="https://twitter.com" className="hover:underline">
+                        <a href="#" className="hover:underline">
                             <TwitterOutlined className="text-xl" />
                         </a>
                     </div>
