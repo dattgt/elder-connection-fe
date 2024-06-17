@@ -8,6 +8,7 @@ import ManageServicePage from '../pages/admin/ManageService/ManageServicePage';
 import TrainingProgramPage from '../pages/admin/TraningProgram/TrainingProgramPage';
 import HomePage from '../pages/client/Home/HomePage';
 import LoginPage from '../pages/client/Home/LoginPage';
+import AccountPage from '../pages/client/Home/AccountPage';
 import RegisterPage from '../pages/client/Home/RegisterPage';
 import { DefaultLayoutProps } from '../types/layout.type';
 
@@ -34,7 +35,8 @@ interface RouteProps {
 const publicRoutes: RouteProps[] = [
     { path: '/', component: HomePage, layout: DefaultClientLayout },
     { path: '/login', component: LoginPage, layout: DefaultClientLayout},
-    { path: '/register', component: RegisterPage, layout: DefaultClientLayout}
+    { path: '/register', component: RegisterPage, layout: DefaultClientLayout},
+    { path: '/account', component: AccountPage, layout: DefaultClientLayout }
 ];
 
 const privateRoutes: RouteProps[] = [];
