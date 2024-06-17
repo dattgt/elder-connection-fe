@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Input, Button, Select, Radio, Divider, message } from 'antd';
+import { Form, Input, Button, Select, Radio, Divider } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
 const { Option } = Select;
