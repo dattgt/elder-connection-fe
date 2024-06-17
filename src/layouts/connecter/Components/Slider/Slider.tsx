@@ -4,9 +4,9 @@ import {
     ReadOutlined,
     ScheduleOutlined,
     DollarOutlined,
-    UserOutlined
+    UserOutlined,
 } from '@ant-design/icons';
-import { Menu, MenuProps, Layout, Avatar } from 'antd';
+import { Menu, MenuProps, Layout } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -79,10 +79,8 @@ export default function MySider() {
                 </div>
             }
         >
-            <div className="logo p-4 flex flex-col items-center">
-                <img src="/path/to/logo.png" alt="Logo" className="mb-2" />
-                <Avatar size={64} icon={<UserOutlined />} className="mb-2" />
-                <p className="text-center">MISS HÀ</p>
+            <div className="demo-logo-vertical border-r-[1px] border-gray-200">
+                <img src="/logo.jpg" alt="Logo" className="h-16 w-16" />
             </div>
             <Menu
                 defaultSelectedKeys={['1']}
