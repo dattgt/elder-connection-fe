@@ -13,11 +13,13 @@ const aboutMenu = (
 
 const servicesMenu = (
     <Menu>
-        <Menu.Item key="1">Dịch vụ chăm sóc</Menu.Item>
-        <Menu.Item key="2">Dịch vụ tư vấn</Menu.Item>
-        <Menu.Item key="3">Dịch vụ hỗ trợ</Menu.Item>
+      <Menu.Item key="1">
+        <Link to="/services">Dịch vụ chăm sóc</Link>
+      </Menu.Item>
+      <Menu.Item key="2">Dịch vụ tư vấn</Menu.Item>
+      <Menu.Item key="3">Dịch vụ hỗ trợ</Menu.Item>
     </Menu>
-);
+  );
 
 const Header: React.FC = () => {
     const navigate = useNavigate();
