@@ -73,7 +73,7 @@ export default function MySider() {
                 width={256}
             >
                 <div className="demo-logo-vertical border-r-[1px] border-gray-200">
-                    <p>Logo</p>
+                    <img src="/logo.jpg" alt="Logo" className="h-16 w-16" />
                 </div>
                 <Menu
                     defaultSelectedKeys={['1']}

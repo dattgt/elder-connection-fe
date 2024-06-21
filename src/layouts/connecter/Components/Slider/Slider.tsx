@@ -2,13 +2,11 @@ import {
     MenuOutlined,
     HomeOutlined,
     ReadOutlined,
-    HeartOutlined,
     ScheduleOutlined,
     DollarOutlined,
-    SolutionOutlined,
-    UserOutlined
+    UserOutlined,
 } from '@ant-design/icons';
-import { Menu, MenuProps, Layout, Avatar } from 'antd';
+import { Menu, MenuProps, Layout } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -50,26 +48,22 @@ export default function MySider() {
     const getConditionalItems = (): MenuItem[] => [
         getItem('Bảng thống kê', '1', <HomeOutlined />),
         getItem('Tin tức và kiến thức', '2', <ReadOutlined />),
-        getItem('Quản lý khách hàng', '3', <HeartOutlined />),
-        getItem('Công việc của tôi', '4', <ScheduleOutlined />),
-        getItem('Thu nhập của tôi', '5', <DollarOutlined />),
-        getItem('Quy trình đào tạo', '6', <SolutionOutlined />),
-        getItem('Thông tin cá nhân', '7', <UserOutlined />),
-        getItem('Hỗ trợ', '8', <HomeOutlined />), // Placeholder for actual icon
-        getItem('Tài liệu', '9', <ReadOutlined />), // Placeholder for actual icon
+        getItem('Công việc của tôi', '3', <ScheduleOutlined />),
+        getItem('Thu nhập của tôi', '4', <DollarOutlined />),
+        getItem('Thông tin cá nhân', '5', <UserOutlined />),
+        getItem('Hỗ trợ', '6', <HomeOutlined />), // Placeholder for actual icon
+        getItem('Tài liệu', '7', <ReadOutlined />), // Placeholder for actual icon
     ];
 
     const navUrl = new Map<string, string>();
     navUrl
         .set('1', '/connecter/')
         .set('2', '/connecter/tin-tuc')
-        .set('3', '/connecter/quan-ly-khach-hang')
-        .set('4', '/connecter/cong-viec')
-        .set('5', '/connecter/thu-nhap')
-        .set('6', '/connecter/quy-trinh-dao-tao')
-        .set('7', '/connecter/thong-tin-ca-nhan')
-        .set('8', '/connecter/')
-        .set('9', '/connecter/');
+        .set('3', '/connecter/cong-viec')
+        .set('4', '/connecter/thu-nhap')
+        .set('5', '/connecter/thong-tin-ca-nhan')
+        .set('6', '/connecter/')
+        .set('7', '/connecter/');
 
     return (
         <Sider
@@ -85,10 +79,8 @@ export default function MySider() {
                 </div>
             }
         >
-            <div className="logo p-4 flex flex-col items-center">
-                <img src="/path/to/logo.png" alt="Logo" className="mb-2" />
-                <Avatar size={64} icon={<UserOutlined />} className="mb-2" />
-                <p className="text-center">MISS HÀ</p>
+            <div className="demo-logo-vertical border-r-[1px] border-gray-200">
+                <img src="/logo.jpg" alt="Logo" className="h-16 w-16" />
             </div>
             <Menu
                 defaultSelectedKeys={['1']}

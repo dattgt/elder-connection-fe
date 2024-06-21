@@ -7,6 +7,14 @@ import ManageConnectionPage from '../pages/admin/ManageConnection/ManageConnecti
 import ManageServicePage from '../pages/admin/ManageService/ManageServicePage';
 import TrainingProgramPage from '../pages/admin/TraningProgram/TrainingProgramPage';
 import HomePage from '../pages/client/Home/HomePage';
+import LoginPage from '../pages/client/Home/LoginPage';
+import AccountPage from '../pages/client/Home/AccountPage';
+import RegisterPage from '../pages/client/Home/RegisterPage';
+import ServicePage from '../pages/client/Home/ServicePage';
+import PaymentPage from '../pages/client/Home/PaymentPage'; 
+import SuccessPage from '../pages/client/Home/SuccessPage';
+import ServicesPage from '../pages/client/Services/ServicesPage';
+import ContactPage from '../pages/client/Contact/ContactPage';
 import { DefaultLayoutProps } from '../types/layout.type';
 
 // connecter
@@ -31,6 +39,14 @@ interface RouteProps {
 
 const publicRoutes: RouteProps[] = [
     { path: '/', component: HomePage, layout: DefaultClientLayout },
+    { path: '/login', component: LoginPage, layout: DefaultClientLayout},
+    { path: '/register', component: RegisterPage, layout: DefaultClientLayout},
+    { path: '/account', component: AccountPage, layout: DefaultClientLayout },
+    { path: '/services', component: ServicePage, layout: DefaultClientLayout },
+    { path: '/payment', component: PaymentPage, layout: DefaultClientLayout },
+    { path: '/success', component: SuccessPage, layout: DefaultClientLayout },
+    { path: '/services-infomation', component: ServicesPage, layout: DefaultClientLayout },
+    { path: '/contact', component: ContactPage, layout: DefaultClientLayout },
 ];
 
 const privateRoutes: RouteProps[] = [];
