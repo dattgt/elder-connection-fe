@@ -13,13 +13,13 @@ const aboutMenu = (
 
 const servicesMenu = (
     <Menu>
-      <Menu.Item key="1">
-        <Link to="/services">Dịch vụ chăm sóc</Link>
-      </Menu.Item>
-      <Menu.Item key="2">Dịch vụ tư vấn</Menu.Item>
-      <Menu.Item key="3">Dịch vụ hỗ trợ</Menu.Item>
+        <Menu.Item key="1">
+            <Link to="/services">Dịch vụ chăm sóc</Link>
+        </Menu.Item>
+        <Menu.Item key="2">Dịch vụ tư vấn</Menu.Item>
+        <Menu.Item key="3">Dịch vụ hỗ trợ</Menu.Item>
     </Menu>
-  );
+);
 
 const Header: React.FC = () => {
     const navigate = useNavigate();
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
     );
 
     return (
-        <div className="flex w-full items-center justify-between bg-white p-4 shadow-md fixed top-0 z-50">
+        <div className="flex w-full items-center justify-between bg-white p-4 shadow-md">
             <Link to="/" className="flex items-center space-x-2">
                 <img src="/logo.jpg" alt="Logo" className="h-16 w-16" />
                 <span className="text-2xl font-bold">Elder Connection</span>
@@ -78,10 +78,19 @@ const Header: React.FC = () => {
                         Về Elder Connection <DownOutlined className="ml-1" />
                     </a>
                 </Dropdown>
-                <Dropdown overlay={servicesMenu}>
+                {/* <Dropdown overlay={servicesMenu}>
                     <a
+                        href="/services-infomation"
                         className="ant-dropdown-link flex items-center"
                         onClick={(e) => e.preventDefault()}
+                    >
+                        Dịch Vụ <DownOutlined className="ml-1" />
+                    </a>
+                </Dropdown> */}
+                <Dropdown overlay={servicesMenu}>
+                    <a
+                        href="/services-infomation"
+                        className="ant-dropdown-link flex items-center"
                     >
                         Dịch Vụ <DownOutlined className="ml-1" />
                     </a>
