@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Typography } from 'antd';
-import { color } from 'framer-motion';
 
 const { Title } = Typography;
 
