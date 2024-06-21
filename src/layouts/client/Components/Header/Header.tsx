@@ -98,7 +98,7 @@ const Header: React.FC = () => {
                 <a href="#" className="hover:text-blue-500">
                     Trở thành đối tác
                 </a>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/contact" className="hover:text-blue-500">
                     CSKH
                 </a>
                 {isLoggedIn ? (
