@@ -64,7 +64,7 @@ const Header: React.FC = () => {
     );
 
     return (
-        <div className="flex w-full items-center justify-between bg-white p-4 shadow-md">
+        <div className="flex w-full items-center justify-between bg-white p-4 shadow-md fixed top-0 z-50">
             <Link to="/" className="flex items-center space-x-2">
                 <img src="/logo.jpg" alt="Logo" className="h-16 w-16" />
                 <span className="text-2xl font-bold">Elder Connection</span>
