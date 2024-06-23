@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { notification } from 'antd';
 
 const LoginPage: React.FC = () => {
     const navigate = useNavigate();
@@ -7,6 +8,10 @@ const LoginPage: React.FC = () => {
     const handleLogin = (event: React.FormEvent) => {
         event.preventDefault();
         localStorage.setItem('isLoggedIn', 'true');
+        notification.success({
+            message: 'Đăng nhập thành công',
+            description: 'Chào mừng bạn trở lại!',
+        });
         navigate('/'); // Redirect to the home page
         window.dispatchEvent(new Event('storage')); // Trigger storage event to update Header state
     };
@@ -21,7 +26,7 @@ const LoginPage: React.FC = () => {
                     Đăng nhập
                 </h2>
                 <form className="mt-8 space-y-6" onSubmit={handleLogin}>
-                    <div className="-space-y-px rounded-md shadow-sm">
+                    <div className="rounded-md shadow-sm">
                         <div>
                             <label htmlFor="email-address" className="sr-only">
                                 Email
@@ -32,11 +37,11 @@ const LoginPage: React.FC = () => {
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                className="relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                 placeholder="Email của bạn"
                             />
                         </div>
-                        <div>
+                        <div className="mt-4">
                             <label htmlFor="password" className="sr-only">
                                 Mật khẩu
                             </label>
@@ -46,13 +51,13 @@ const LoginPage: React.FC = () => {
                                 type="password"
                                 autoComplete="current-password"
                                 required
-                                className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                className="relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                 placeholder="Mật khẩu của bạn"
                             />
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-between">
+                    <div className="mt-4 flex items-center justify-between">
                         <div className="flex items-center">
                             <input
                                 id="remember-me"
@@ -78,7 +83,7 @@ const LoginPage: React.FC = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="mt-4">
                         <button
                             type="submit"
                             className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#839567] px-4 py-2 text-sm font-medium text-white hover:bg-[#6d7d4e] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -87,7 +92,7 @@ const LoginPage: React.FC = () => {
                         </button>
                     </div>
 
-                    <div className="text-center text-sm">
+                    <div className="mt-4 text-center text-sm">
                         <p>
                             Không có tài khoản?{' '}
                             <Link
