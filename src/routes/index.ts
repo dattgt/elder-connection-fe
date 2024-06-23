@@ -13,6 +13,7 @@ import RegisterPage from '../pages/client/Home/RegisterPage';
 import ServicePage from '../pages/client/Home/ServicePage';
 import PaymentPage from '../pages/client/Home/PaymentPage'; 
 import SuccessPage from '../pages/client/Home/SuccessPage';
+import ApplyPage from '../pages/client/Home/ApplyPage';
 import ServicesPage from '../pages/client/Services/ServicesPage';
 import ContactPage from '../pages/client/Contact/ContactPage';
 import { DefaultLayoutProps } from '../types/layout.type';
@@ -47,6 +48,7 @@ const publicRoutes: RouteProps[] = [
     { path: '/success', component: SuccessPage, layout: DefaultClientLayout },
     { path: '/services-infomation', component: ServicesPage, layout: DefaultClientLayout },
     { path: '/contact', component: ContactPage, layout: DefaultClientLayout },
+    { path: '/apply', component: ApplyPage, layout: DefaultClientLayout },
 ];
 
 const privateRoutes: RouteProps[] = [];

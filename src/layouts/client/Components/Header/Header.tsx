@@ -26,12 +26,10 @@ const Header: React.FC = () => {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
     const [logoutModalVisible, setLogoutModalVisible] = useState<boolean>(false);
 
-    // Sync isLoggedIn state with localStorage on component mount
     useEffect(() => {
         const storedLoginState = localStorage.getItem('isLoggedIn');
         setIsLoggedIn(storedLoginState === 'true');
 
-        // Listen for changes to localStorage to handle multiple tabs
         const handleStorageChange = () => {
             setIsLoggedIn(localStorage.getItem('isLoggedIn') === 'true');
         };
@@ -78,24 +76,14 @@ const Header: React.FC = () => {
                         Về Elder Connection <DownOutlined className="ml-1" />
                     </a>
                 </Dropdown>
-                {/* <Dropdown overlay={servicesMenu}>
-                    <a
-                        href="/services-infomation"
-                        className="ant-dropdown-link flex items-center"
-                        onClick={(e) => e.preventDefault()}
-                    >
-                        Dịch Vụ <DownOutlined className="ml-1" />
-                    </a>
-                </Dropdown> */}
                 <Dropdown overlay={servicesMenu}>
-                    <a
-                        href="/services-infomation"
-                        className="ant-dropdown-link flex items-center"
-                    >
+                    <a href="/services-infomation" className="ant-dropdown-link flex items-center">
                         Dịch Vụ <DownOutlined className="ml-1" />
                     </a>
                 </Dropdown>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/apply" className="hover:text-blue-500">
+                    {' '}
+                    {/* Updated link */}
                     Trở thành đối tác
                 </a>
                 <a href="/contact" className="hover:text-blue-500">
@@ -114,7 +102,7 @@ const Header: React.FC = () => {
                     </Link>
                 )}
             </div>
-            <Modal visible={logoutModalVisible} footer={null} closable={false}>
+            <Modal open={logoutModalVisible} footer={null} closable={false}>
                 <div className="flex flex-col items-center justify-center">
                     <Spin size="large" />
                     <span>Đang đăng xuất...</span>
