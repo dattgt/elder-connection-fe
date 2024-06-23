@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Checkbox, Button, Form, Input, message } from 'antd';
+import { Button, Form, Input, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 
 const districts = [
