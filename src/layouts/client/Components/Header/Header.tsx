@@ -6,20 +6,24 @@ import { Link, useNavigate } from 'react-router-dom';
 const aboutMenu = (
     <Menu>
         <Menu.Item key="1">Giới thiệu</Menu.Item>
-        <Menu.Item key="2">Lịch sử</Menu.Item>
-        <Menu.Item key="3">Sứ mệnh và tầm nhìn</Menu.Item>
+        <Menu.Item key="2">
+            <Link to="/coming-soon">Lịch sử</Link>
+        </Menu.Item>
+        <Menu.Item key="3">
+            <Link to="/coming-soon">Sứ mệnh và tầm nhìn</Link>
+        </Menu.Item>
     </Menu>
 );
 
-const servicesMenu = (
-    <Menu>
-        <Menu.Item key="1">
-            <Link to="/services">Dịch vụ chăm sóc</Link>
-        </Menu.Item>
-        <Menu.Item key="2">Dịch vụ tư vấn</Menu.Item>
-        <Menu.Item key="3">Dịch vụ hỗ trợ</Menu.Item>
-    </Menu>
-);
+// const servicesMenu = (
+//     <Menu>
+//         <Menu.Item key="1">
+//             <Link to="/services">Dịch vụ chăm sóc</Link>
+//         </Menu.Item>
+//         <Menu.Item key="2">Dịch vụ tư vấn</Menu.Item>
+//         <Menu.Item key="3">Dịch vụ hỗ trợ</Menu.Item>
+//     </Menu>
+// );
 
 const Header: React.FC = () => {
     const navigate = useNavigate();
@@ -76,11 +80,9 @@ const Header: React.FC = () => {
                         Về Elder Connection <DownOutlined className="ml-1" />
                     </a>
                 </Dropdown>
-                <Dropdown overlay={servicesMenu}>
-                    <a href="/services-infomation" className="ant-dropdown-link flex items-center">
-                        Dịch Vụ <DownOutlined className="ml-1" />
-                    </a>
-                </Dropdown>
+                <a href="/services-infomation" className="hover:text-blue-500">
+                    Dịch Vụ
+                </a>
                 <a href="/apply" className="hover:text-blue-500">
                     {' '}
                     {/* Updated link */}
@@ -91,7 +93,7 @@ const Header: React.FC = () => {
                 </a>
                 {isLoggedIn ? (
                     <Dropdown overlay={userMenu} trigger={['click']}>
-                        <Avatar className="cursor-pointer" size="large" src="/path-to-avatar.jpg" />
+                        <Avatar className="cursor-pointer" size="large" src="/path-to-avatar.jpg" icon={<UserOutlined />}/>
                     </Dropdown>
                 ) : (
                     <Link
