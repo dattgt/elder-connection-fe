@@ -102,19 +102,19 @@ const HomePage = () => {
     const activities = [
         {
             name: 'Hãy cho chúng tôi biết những gì bạn cần',
-            imgUrl: 'https://media.istockphoto.com/id/1493372905/photo/elderly-aboriginal-australian-mother-with-adult-daughter.jpg?s=612x612&w=0&k=20&c=0iS-oRfUWowH_YkFByR_3wbfwBJLOV0gnHolbNyD2Uk=',
+            imgUrl: 'https://i2.ex-cdn.com/cpcs.vn/files/content/2020/01/18/cham-soc-nguoi-gia-1049.jpg',
             description:
                 'Bắt đầu trực tuyến. Chọn dịch vụ của bạn, chúng tôi sẽ bắt đầu kết nối bạn với người chăm sóc để bạn xem xét trên trang web hoặc ứng dụng Elder Connection.',
         },
         {
             name: 'Định hình giải pháp của bạn',
-            imgUrl: 'https://media.istockphoto.com/id/1482560905/photo/nurse-giving-medicine-to-senior-woman-at-her-home.jpg?s=612x612&w=0&k=20&c=oaFLlyf0itdfRtpA4tyjepT9Zrht3uv7AX0iELcro6U=',
+            imgUrl: 'https://cafebiz.cafebizcdn.vn/162123310254002176/2023/12/10/avatar1698037095909-16980370964381915520706-17022113665671793311925.jpeg',
             description:
                 'Hoàn thành hồ sơ chăm sóc của bạn - điều này cho phép nhóm lâm sàng của chúng tôi xác nhận liệu việc chăm sóc có thể tiếp tục một cách an toàn hay không. Ở bước này, bạn cũng sẽ nhận được thông tin chi tiết về người chăm sóc phù hợp nhất.',
         },
         {
             name: 'Luôn kiểm soát',
-            imgUrl: 'https://media.istockphoto.com/id/2148477470/photo/happy-old-couple-talking-while-relaxing-on-sofa-at-home.jpg?s=612x612&w=0&k=20&c=GlahSf_Thwfdtb4RwdtpBWmg_928b3jyqimNx-fz7y4=',
+            imgUrl: 'https://chamsocsuckhoeviet.com.vn/wp-content/uploads/2020/12/dich-vu-cham-soc-suc-khoe-nguoi-cao-tuoi-tai-nha-tam-va-duc.jpg',
             description:
                 'Sau khi đã có dịch vụ chăm sóc, bạn và gia đình có thể quản lý dịch vụ đó từ mọi nơi bằng tài khoản ElderConnection của mình.',
         },
@@ -160,7 +160,7 @@ const HomePage = () => {
                         </Col>
                         <Col xs={24} md={12}>
                             <img
-                                src="https://media.istockphoto.com/id/1287981230/photo/everythings-gonna-be-fine.jpg?s=612x612&w=0&k=20&c=RCXBAN53DkkEF7Bu_EjDtMcNZQ-LhD-GMu9O_DlPxAI="
+                                src="https://vov2.vov.vn/sites/default/files/styles/large/public/2023-12/nguoi-gia-nghi-le_2.jpg"
                                 alt="Elder Care"
                                 className="w-full rounded-lg shadow-md"
                             />
