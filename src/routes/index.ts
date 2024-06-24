@@ -16,6 +16,7 @@ import SuccessPage from '../pages/client/Home/SuccessPage';
 import ApplyPage from '../pages/client/Home/ApplyPage';
 import ServicesPage from '../pages/client/Services/ServicesPage';
 import ContactPage from '../pages/client/Contact/ContactPage';
+import ComingSoonPage from '../pages/client/Home/ComingSoonPage';
 import { DefaultLayoutProps } from '../types/layout.type';
 
 // connecter
@@ -48,6 +49,7 @@ const publicRoutes: RouteProps[] = [
     { path: '/success', component: SuccessPage, layout: DefaultClientLayout },
     { path: '/services-infomation', component: ServicesPage, layout: DefaultClientLayout },
     { path: '/contact', component: ContactPage, layout: DefaultClientLayout },
+    { path: '/coming-soon', component: ComingSoonPage, layout: DefaultClientLayout },
     { path: '/apply', component: ApplyPage, layout: DefaultClientLayout },
 ];
 
