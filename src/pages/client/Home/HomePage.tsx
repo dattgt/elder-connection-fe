@@ -274,7 +274,6 @@ const HomePage = () => {
                     </Row>
                 </section>
             </div>
-            {/* QR Code Section */}
             <div className="container mx-auto mb-20 mt-10 flex flex-col items-center rounded-lg bg-white p-6 shadow-lg lg:flex-row">
                 <div className="flex-1 text-center lg:text-left">
                     <Title level={1} className="font-bold">
@@ -285,8 +284,11 @@ const HomePage = () => {
                         Elder Connection.
                     </Text>
                     <div className="mt-6 flex items-center justify-center lg:justify-start">
-                        <QRCodeSVG value="https://your-app-link" className="mr-4 h-40 w-40" />
-                        <div>
+                        <QRCodeSVG
+                            value="https://expo.dev/accounts/thanhlong109/projects/elder-connection-mobile-v2/builds/f993660b-0419-4760-b8a9-43c6b7534a4c"
+                            className="ml-32 mr-4 h-72 w-72"
+                        />
+                        {/* <div>
                             <a
                                 href="https://play.google.com/store"
                                 target="_blank"
@@ -309,7 +311,7 @@ const HomePage = () => {
                                     className="w-40"
                                 />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="mt-8 flex-1 lg:mt-0">
