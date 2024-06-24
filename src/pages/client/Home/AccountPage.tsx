@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Avatar, Upload } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
+import { UploadOutlined, UserOutlined } from '@ant-design/icons';
 
 const AccountPage: React.FC = () => {
     const onFinish = (values: any) => {
@@ -12,7 +12,7 @@ const AccountPage: React.FC = () => {
             <div className="w-full max-w-4xl rounded-md bg-white p-8 shadow-md">
                 <h2 className="mb-4 text-2xl font-bold">Thông tin cá nhân</h2>
                 <div className="mb-6 flex items-center">
-                    <Avatar size={64} src="/path-to-avatar.jpg" className="mr-4" />
+                    <Avatar size={64} src="/path-to-avatar.jpg" className="mr-4" icon={<UserOutlined />}/>
                     <div>
                         <h3 className="text-lg font-semibold">Nguyen Chien Thang</h3>
                         <p className="text-sm text-gray-500">CEO Elder Connection</p>
