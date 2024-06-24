@@ -1,11 +1,12 @@
-// import { ItemTest, useAddItemMutation, useGetListQuery } from '../../../services/example.service';
-import { Button, Card, Typography, Row, Col } from 'antd';
+// HomePage.tsx
+import { Card, Typography, Row, Col } from 'antd';
 import {
     CheckCircleOutlined,
     HeartOutlined,
     ClockCircleOutlined,
     DollarOutlined,
 } from '@ant-design/icons';
+import { QRCodeSVG } from 'qrcode.react';
 
 const { Title, Text } = Typography;
 
@@ -119,23 +120,7 @@ const HomePage = () => {
                 'Sau khi đã có dịch vụ chăm sóc, bạn và gia đình có thể quản lý dịch vụ đó từ mọi nơi bằng tài khoản ElderConnection của mình.',
         },
     ];
-    /********** example to call api 
-    const { data, isSuccess, isLoading } = useGetListQuery();
-    const [mutation, { isSuccess: addSuccess, isLoading: addLoading }] = useAddItemMutation();
-    const [dataload, setdataload] = useState<ItemTest[]>([]);
 
-    useEffect(() => {
-        if (isSuccess && data) {
-            setdataload(data);
-        }
-    }, [isSuccess, addSuccess]);
-
-    const onClick = () => {
-        const i = dataload.length;
-        mutation({ id: i + 1, title: `item${i + 1}` });
-    };
-    */
-    /*** end example */
     return (
         <>
             <div style={{ backgroundColor: '#f5f3ef' }}>
@@ -154,9 +139,6 @@ const HomePage = () => {
                                 gia đình và người chăm sóc họ.
                             </Text>
                             <br />
-                            <Button className="mt-5 flex items-center justify-center rounded-full border border-[#5a6e40] bg-[#839567] px-4 py-2 text-white shadow-md transition-all duration-300">
-                                Bắt đầu trực tuyến
-                            </Button>
                         </Col>
                         <Col xs={24} md={12}>
                             <img
@@ -256,11 +238,6 @@ const HomePage = () => {
                             </Col>
                         ))}
                     </Row>
-                    <div className="mt-4 text-center">
-                        <Button className="items-center justify-center rounded-full border border-[#5a6e40] bg-[#839567] px-4 text-white shadow-md transition-all duration-300">
-                            Bắt Đầu
-                        </Button>
-                    </div>
                 </section>
             </div>
             <div style={{ backgroundColor: '#f5f3ef' }}>
@@ -296,6 +273,52 @@ const HomePage = () => {
                         ))}
                     </Row>
                 </section>
+            </div>
+            {/* QR Code Section */}
+            <div className="container mx-auto mb-20 mt-10 flex flex-col items-center rounded-lg bg-white p-6 shadow-lg lg:flex-row">
+                <div className="flex-1 text-center lg:text-left">
+                    <Title level={1} className="font-bold">
+                        Bạn đã sẵn sàng để trải nghiệm?
+                    </Title>
+                    <Text className="mt-2">
+                        Tải, đăng ký và trải nghiệm những tính năng thú vị chỉ có trên ứng dụng
+                        Elder Connection.
+                    </Text>
+                    <div className="mt-6 flex items-center justify-center lg:justify-start">
+                        <QRCodeSVG value="https://your-app-link" className="mr-4 h-40 w-40" />
+                        <div>
+                            <a
+                                href="https://play.google.com/store"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"
+                                    alt="Google Play"
+                                    className="mb-5 w-40"
+                                />
+                            </a>
+                            <a
+                                href="https://www.apple.com/app-store/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="App Store"
+                                    className="w-40"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-8 flex-1 lg:mt-0">
+                    <img
+                        src="https://static.vecteezy.com/system/resources/previews/017/264/717/non_2x/man-using-social-media-applications-on-mobile-cell-phone-person-texting-messages-in-chat-apps-on-smartphone-vector.jpg"
+                        alt="Illustration"
+                        className="h-full= w-full object-contain"
+                    />
+                </div>
             </div>
         </>
     );
