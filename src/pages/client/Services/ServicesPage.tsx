@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Typography } from 'antd';
+import { Typography } from 'antd';
 
 const { Title } = Typography;
 
@@ -14,7 +14,7 @@ const ServicesPage: React.FC = () => {
                             Khi bạn có nhu cầu được chăm sóc, Elder Connection có thể kết nối bạn với một người chăm sóc có kinh nghiệm, là một người mà bạn có thể tin tưởng để chăm sóc theo cách bạn mong muốn.
                         </p>
                         {/* <Button type="primary" className="bg-green-600 border-green-600 hover:bg-green-700 mt-4">Bắt đầu ngay</Button> */}
-                        <Button type="primary" className="border-[#5a6e40] bg-[#839567] text-white hover:border-[#4c5e35] hover:bg-[#6d7d4e] mt-4">Bắt đầu ngay</Button>
+                        {/* <Button type="primary" className="border-[#5a6e40] bg-[#839567] text-white hover:border-[#4c5e35] hover:bg-[#6d7d4e] mt-4">Bắt đầu ngay</Button> */}
                     </div>
                     <div>
                         <img src="https://cdn-i.vtcnews.vn/resize/th/upload/2021/11/04/duonglao0-12301639.jpg" alt="Service" className="w-full h-auto rounded shadow" />

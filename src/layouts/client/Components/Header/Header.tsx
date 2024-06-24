@@ -5,7 +5,9 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const aboutMenu = (
     <Menu>
-        <Menu.Item key="1">Giới thiệu</Menu.Item>
+        <Menu.Item key="1">
+            <Link to="/coming-soon">Giới thiệu</Link>
+        </Menu.Item>
         <Menu.Item key="2">
             <Link to="/coming-soon">Lịch sử</Link>
         </Menu.Item>
@@ -93,7 +95,12 @@ const Header: React.FC = () => {
                 </a>
                 {isLoggedIn ? (
                     <Dropdown overlay={userMenu} trigger={['click']}>
-                        <Avatar className="cursor-pointer" size="large" src="/path-to-avatar.jpg" icon={<UserOutlined />}/>
+                        <Avatar
+                            className="cursor-pointer"
+                            size="large"
+                            src="/path-to-avatar.jpg"
+                            icon={<UserOutlined />}
+                        />
                     </Dropdown>
                 ) : (
                     <Link
