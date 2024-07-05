@@ -186,7 +186,7 @@ const HomePage = () => {
                                 md={6}
                                 className="mb-6 flex-auto justify-center"
                             >
-                                <Card className="mb-4 shadow-md">
+                                <Card className="mb-4 shadow-md transition duration-300 ease-in-out hover:-translate-y-1">
                                     <Title
                                         level={4}
                                         style={{ color: '#7A9461' }}
@@ -223,7 +223,7 @@ const HomePage = () => {
                     <Row gutter={16} className="text-center">
                         {packages.map((item, index) => (
                             <Col key={index} xs={24} md={8}>
-                                <Card className="mb-4 shadow-md">
+                                <Card className="mb-4 shadow-md transition duration-300 ease-in-out hover:-translate-y-1">
                                     <Title level={4} style={{ color: '#7A9461' }}>
                                         {item.name}
                                     </Title>
@@ -258,11 +258,11 @@ const HomePage = () => {
                                 md={8}
                                 className="mb-5 flex justify-center"
                             >
-                                <Card className="mb-4 shadow-md">
+                                <Card className="mb-4 shadow-md transition duration-300 ease-in-out hover:-translate-y-1">
                                     <img
                                         src={work.imgUrl}
                                         alt={work.name}
-                                        className="mb-4 w-full rounded-md"
+                                        className="mb-4 h-[270px] w-full rounded-md"
                                     />
                                     <Title level={4} style={{ color: '#A29ECD' }}>
                                         {work.name}
@@ -285,7 +285,7 @@ const HomePage = () => {
                     </Text>
                     <div className="mt-6 flex items-center justify-center lg:justify-start">
                         <QRCodeSVG
-                            value="https://expo.dev/accounts/thanhlong109/projects/elder-connection-mobile-v2/builds/f993660b-0419-4760-b8a9-43c6b7534a4c"
+                            value="https://github.com/thanhlong109/elder-connection-mobile/releases/download/v1.1.0/elder_connection.apk"
                             className="ml-32 mr-4 h-72 w-72"
                         />
                         {/* <div>
