@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Input, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
+import { QRCodeSVG } from 'qrcode.react';
 
 const districts = [
     'Quận 1',
@@ -50,8 +51,17 @@ const ApplyPage: React.FC = () => {
     };
 
     return (
-        <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-green-200 via-green-300 to-blue-200">
+        <div className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-green-200 via-green-300 to-blue-200">
             <div className="w-11/12 rounded-lg bg-white p-8 shadow-lg md:w-3/4 lg:w-1/2 xl:w-1/3">
+                <div className="absolute right-5 top-5 flex flex-col items-center rounded-md bg-white p-6">
+                    <QRCodeSVG
+                        value="https://github.com/thanhlong109/elder-connection-partner-mobile/releases/download/v1.0.0/elder_connector.apk"
+                        className="h-50 w-50"
+                    />
+                    <p className="mt-1 text-wrap font-bold text-[#7A9461]">
+                        Tải xuống ứng dụng cho Connector
+                    </p>
+                </div>
                 {step === 1 && (
                     <>
                         <h1 className="mb-4 text-center text-xl font-bold">
