@@ -67,11 +67,10 @@ const connectorAgeData = [
 ];
 
 const serviceDistributionData = [
-    { name: 'HCM', value: 1920 },
-    { name: 'Hà Nội', value: 1860 },
-    { name: 'Đà Nẵng', value: 1763 },
-    { name: 'Định Quán', value: 375 },
-    { name: 'Các tỉnh thành khác', value: 105 },
+    { name: 'Quận 1', value: 2 },
+    { name: 'Quận 3', value: 1 },
+    { name: 'Thủ đức', value: 4 },
+    { name: 'Quận 12', value: 2 },
 ];
 
 const { Text } = Typography;
@@ -112,7 +111,7 @@ const DashBoardPage = () => {
             <Row gutter={[16, 16]} className="mb-6">
                 <Col span={6}>
                     <Card className="shadow-md">
-                        <Statistic title="Tổng số phản hồi" value={2040} />
+                        <Statistic title="Tổng số phản hồi" value={4} />
                         <div className="mt-2 flex items-center justify-between">
                             <span className="text-green-500">Tăng 1.8% so với tuần trước</span>
                         </div>
@@ -120,7 +119,7 @@ const DashBoardPage = () => {
                 </Col>
                 <Col span={6}>
                     <Card className="shadow-md">
-                        <Statistic title="Tổng số doanh thu" value="1T 600Tr" />
+                        <Statistic title="Tổng số doanh thu" value="4tr 250k" />
                         <div className="mt-2 flex items-center justify-between">
                             <span className="text-red-500">Giảm 4.3% so với tháng trước</span>
                         </div>
@@ -128,7 +127,7 @@ const DashBoardPage = () => {
                 </Col>
                 <Col span={6}>
                     <Card className="shadow-md">
-                        <Statistic title="Tổng số khách hàng" value={10293} />
+                        <Statistic title="Tổng số khách hàng" value={16} />
                         <div className="mt-2 flex items-center justify-between">
                             <span className="text-green-500">Tăng 1.3% so với tuần trước</span>
                         </div>
@@ -136,7 +135,7 @@ const DashBoardPage = () => {
                 </Col>
                 <Col span={6}>
                     <Card className="shadow-md">
-                        <Statistic title="Tổng số Connectors" value={40689} />
+                        <Statistic title="Tổng số Connectors" value={9} />
                         <div className="mt-2 flex items-center justify-between">
                             <span className="text-green-500">Tăng 8.5% so với tuần trước</span>
                         </div>
@@ -155,8 +154,8 @@ const DashBoardPage = () => {
                                     style={{ width: 120 }}
                                     onChange={handleMonthChange}
                                 >
-                                    <Option value="Jan">Tháng 1</Option>
-                                    <Option value="Feb">Tháng 2</Option>
+                                    <Option value="Jan">Tháng 7</Option>
+                                    <Option value="Feb">Tháng 8</Option>
                                 </Select>
                             </div>
                         }
@@ -329,9 +328,7 @@ const DashBoardPage = () => {
                                         <div style={{ flex: '1 1 150px' }}>
                                             <Text strong>{item.name}</Text>
                                         </div>
-                                        <div style={{ flex: '1 1 150px' }}>
-                                            {`${item.service}`}
-                                        </div>
+                                        <div style={{ flex: '1 1 150px' }}>{`${item.service}`}</div>
                                         <div style={{ flex: '1 1 150px' }}>{item.connector}</div>
                                         <div style={{ flex: '1 1 150px' }}>{item.user}</div>
                                     </div>
