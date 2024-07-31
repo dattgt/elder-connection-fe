@@ -1,5 +1,5 @@
 import { Row, Col, Card, Table, Button, Typography, Select } from 'antd';
-import { UserOutlined, TeamOutlined, SolutionOutlined } from '@ant-design/icons';
+import { UserOutlined, TeamOutlined } from '@ant-design/icons';
 
 const { Title } = Typography;
 const { Option } = Select;
