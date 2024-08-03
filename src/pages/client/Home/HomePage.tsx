@@ -40,38 +40,31 @@ const HomePage = () => {
 
     const pricing = [
         {
-            name: 'Ngày Trong Tuần',
-            price: '288,000 VND',
+            name: 'Gói ngày 4 tiếng',
+            price: '262,800 VND',
             description: '4 TIẾNG / NGÀY',
-            dayOfWeek: 'Thứ 2 - Thứ 6',
+            dayOfWeek: 'Thứ 2 - Chủ Nhật',
             hourOfday: '8 giờ sáng - 6 giờ chiều',
         },
         {
-            name: 'Ngày Cuối Tuần',
+            name: 'Gói ngày 8 tiếng',
             price: '320,000 VND',
-            description: '4 TIẾNG / NGÀY',
-            dayOfWeek: 'Thứ 7 - Chủ Nhật',
+            description: '8 TIẾNG / NGÀY',
+            dayOfWeek: 'Thứ 2 - Chủ Nhật',
             hourOfday: '8 giờ sáng - 6 giờ chiều',
         },
         {
-            name: 'Ngày Lễ',
-            price: '372,000 VND',
+            name: 'Gói tháng 4 tiếng',
+            price: '~1,051,200 VND',
             description: '4 TIẾNG / NGÀY',
-            dayOfWeek: 'Thứ 2 - Thứ 6',
+            dayOfWeek: 'Thứ 2 - Chủ Nhật',
             hourOfday: '8 giờ sáng - 6 giờ chiều',
         },
         {
-            name: 'Ca Đêm Ngày Thường',
-            price: '344,000 VND',
-            description: '4 TIẾNG / NGÀY',
-            dayOfWeek: 'Thứ 2 - Thứ 6',
-            hourOfday: 'Trước 8 giờ sáng - Sau 6 giờ chiều',
-        },
-        {
-            name: 'Ca Đêm Ngày Lễ, Cuối Tuần',
-            price: '416,000 VND',
-            description: '4 TIẾNG / NGÀY',
-            dayOfWeek: 'Thứ 2 - Thứ 6',
+            name: 'Gói tháng 8 tiếng',
+            price: '2,102,400 VND',
+            description: '8 TIẾNG / NGÀY',
+            dayOfWeek: 'Thứ 2 - Chủ Nhật',
             hourOfday: 'Trước 8 giờ sáng - Sau 6 giờ chiều',
         },
     ];
@@ -103,7 +96,7 @@ const HomePage = () => {
     const activities = [
         {
             name: 'Hãy cho chúng tôi biết những gì bạn cần',
-            imgUrl: 'https://i2.ex-cdn.com/cpcs.vn/files/content/2020/01/18/cham-soc-nguoi-gia-1049.jpg',
+            imgUrl: 'https://devi-institut.com/wp-content/uploads/du-hoc-nghe-dieu-duong-cham-soc-nguoi-gia-tai-duc-hay-nhat-ban.jpg',
             description:
                 'Bắt đầu trực tuyến. Chọn dịch vụ của bạn, chúng tôi sẽ bắt đầu kết nối bạn với người chăm sóc để bạn xem xét trên trang web hoặc ứng dụng Elder Connection.',
         },
