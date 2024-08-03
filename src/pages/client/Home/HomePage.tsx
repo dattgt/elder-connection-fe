@@ -55,14 +55,14 @@ const HomePage = () => {
         },
         {
             name: 'Gói tháng 4 tiếng',
-            price: '~1,051,200 VND',
+            price: '~ 1,051,200 VND',
             description: '4 TIẾNG / NGÀY',
             dayOfWeek: 'Thứ 2 - Chủ Nhật',
             hourOfday: '8 giờ sáng - 6 giờ chiều',
         },
         {
             name: 'Gói tháng 8 tiếng',
-            price: '2,102,400 VND',
+            price: '~ 2,102,400 VND',
             description: '8 TIẾNG / NGÀY',
             dayOfWeek: 'Thứ 2 - Chủ Nhật',
             hourOfday: 'Trước 8 giờ sáng - Sau 6 giờ chiều',
