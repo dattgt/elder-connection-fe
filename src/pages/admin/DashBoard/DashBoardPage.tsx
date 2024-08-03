@@ -51,19 +51,19 @@ const data: DataType = {
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#FF6666', '#FF00FF'];
 
 const customerAgeData = [
-    { name: '85 tuổi trở lên', value: 812 },
-    { name: '75 - 84 tuổi', value: 256 },
-    { name: '65 - 75 tuổi', value: 375 },
-    { name: '50 - 65 tuổi', value: 872 },
-    { name: 'dưới 50 tuổi', value: 541 },
+    { name: '85 tuổi trở lên', value: 3 },
+    { name: '75 - 84 tuổi', value: 11 },
+    { name: '65 - 75 tuổi', value: 2 },
+    { name: '50 - 65 tuổi', value: 2 },
+    { name: 'dưới 50 tuổi', value: 0 },
 ];
 
 const connectorAgeData = [
-    { name: '18 - 24 tuổi', value: 812 },
-    { name: '25 - 29 tuổi', value: 256 },
-    { name: '30 - 34 tuổi', value: 375 },
-    { name: '35 - 40 tuổi', value: 872 },
-    { name: 'Từ 41 tuổi trở lên', value: 541 },
+    { name: '18 - 24 tuổi', value: 4 },
+    { name: '25 - 29 tuổi', value: 2 },
+    { name: '30 - 34 tuổi', value: 3 },
+    { name: '35 - 40 tuổi', value: 0 },
+    { name: 'Từ 41 tuổi trở lên', value: 0 },
 ];
 
 const serviceDistributionData = [

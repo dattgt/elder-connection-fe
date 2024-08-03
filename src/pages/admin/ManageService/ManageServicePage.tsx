@@ -28,33 +28,33 @@ interface ServiceDataType {
 
 // Dummy data for charts and table
 const distributionData = [
-    { name: 'HCM', value: 1920, color: '#0088FE' },
-    { name: 'Hà Nội', value: 1860, color: '#00C49F' },
-    { name: 'Đà Nẵng', value: 1763, color: '#FFBB28' },
-    { name: 'Định Quán', value: 375, color: '#FF8042' },
-    { name: 'Các tỉnh thành khác', value: 105, color: '#FF00FF' },
+    { name: 'Quân 1', value: 3, color: '#0088FE' },
+    { name: 'Thủ Đức', value: 19, color: '#00C49F' },
+    { name: 'Nhà Bè', value: 10, color: '#FFBB28' },
+    { name: 'Bình Thạnh', value: 6, color: '#FF8042' },
 ];
 
 const usageData = [
-    { name: 'Gói cơ bản', value: 40 },
-    { name: 'Gói nâng cao', value: 30 },
-    { name: 'Gói Cao Cấp', value: 20 },
+    { name: 'Gói ngày 4 giờ', value: 25 },
+    { name: 'Gói ngày 8 giờ', value: 8 },
+    { name: 'Gói tháng 4 giờ', value: 5 },
+    { name: 'Gói tháng 8 giờ', value: 0 },
     // Add more usage data
 ];
 
 const frequencyData = [
-    { month: 'Jan', services: 40 },
-    { month: 'Feb', services: 30 },
-    { month: 'Mar', services: 20 },
-    { month: 'Apr', services: 27 },
-    { month: 'May', services: 18 },
-    { month: 'Jun', services: 23 },
-    { month: 'Jul', services: 34 },
-    { month: 'Aug', services: 45 },
-    { month: 'Sep', services: 38 },
-    { month: 'Oct', services: 50 },
-    { month: 'Nov', services: 41 },
-    { month: 'Dec', services: 29 },
+    { month: 'Jan', services: 0 },
+    { month: 'Feb', services: 0 },
+    { month: 'Mar', services: 0 },
+    { month: 'Apr', services: 0 },
+    { month: 'May', services: 0 },
+    { month: 'Jun', services: 21 },
+    { month: 'Jul', services: 15 },
+    { month: 'Aug', services: 2 },
+    { month: 'Sep', services: 0 },
+    { month: 'Oct', services: 0 },
+    { month: 'Nov', services: 0 },
+    { month: 'Dec', services: 0 },
 ];
 
 const serviceData: ServiceDataType[] = [
